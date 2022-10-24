@@ -1,0 +1,48 @@
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Soma</title>
+	</head>
+	<style>
+		.submit{
+			background-color: #FFD700;
+			border: none;
+			border-radius: 5px;
+			color: #FFFFFF;
+			cursor: pointer;
+			font-weight: bold;
+			height: 40px;
+			padding-inline: 15px;
+		}
+		
+		.submit:hover{
+			background-color: #DDB522;
+		}
+		
+		input{
+			border: solid 1px black;
+			border-radius: 3px;
+			padding-inline: 5px;
+			height: 25px;
+			margin-block: 7.5px;
+		}
+		
+	</style>
+	<body>
+		<form action="soma.jsp" method="get">
+			<div>
+				<label>
+					Primeiro número:
+					<input type="number" id="num1" name="num1">
+				</label>
+			</div>
+			<div>
+				<label>
+					Segundo número:
+					<input type="number" id="num2" name="num2">
+				</label>
+			</div>
+			<input type="submit" class="submit" value="Calcular">
+		</form>
+	</body>
+</html>

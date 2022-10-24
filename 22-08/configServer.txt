@@ -1,0 +1,74 @@
+Cliente:
+
+
+package aula1;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.Socket;
+import java.net.UnknownHostException;
+
+public class Cliente {
+
+	public static void main(String[] args) throws UnknownHostException, IOException {
+			final Socket cliente = new Socket("localhost", 12345);
+
+			final BufferedReader buffer = new BufferedReader(new InputStreamReader(cliente.getInputStream()));
+			System.out.println("Testo mandado pelo servidor: " + buffer.readLine());
+			
+			buffer.close();
+			cliente.close();
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+Servidor:
+
+package aula1;
+
+import java.io.IOException;
+import java.io.OutputStream;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.net.UnknownHostException;
+import java.util.Date;
+
+public class Servidor {
+
+	public static void main(String[] args) throws UnknownHostException, IOException {
+
+		ServerSocket ss = new ServerSocket(12345);
+		Socket cliente = ss.accept();
+		
+		enviarTexto(cliente);
+		
+		System.out.println("Cliente conectado: " + cliente.getInetAddress().getHostAddress());
+	}
+	
+	private static void enviarDataComTexto(Socket cliente) throws IOException {
+		System.out.println("Respondendo com texto");
+		final Date dataAtual = new Date();
+		final byte[] textoData = dataAtual.toString().getBytes();
+		enviarTexto(cliente);
+	}
+	
+	private static void enviarTexto(Socket cliente) throws IOException {
+		try (final OutputStream saida = cliente.getOutputStream()) {
+			saida.flush();
+			saida.write("Teste: ".getBytes());
+		}
+	}
+}

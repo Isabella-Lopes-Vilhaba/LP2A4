@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" version="5.0">
+  <servlet>
+    <description></description>
+    <display-name>AlunoCRUD</display-name>
+    <servlet-name>AlunoCRUD</servlet-name>
+    <servlet-class>LP2A4.servlet.AlunoCRUD</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AlunoCRUD</servlet-name>
+    <url-pattern>/AlunoCRUD</url-pattern>
+  </servlet-mapping>
+  <display-name>LP2A4</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>testeCRUD</display-name>
+    <servlet-name>testeCRUD</servlet-name>
+    <servlet-class>LP2A4.servlet.testeCRUD</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>testeCRUD</servlet-name>
+    <url-pattern>/testeCRUD</url-pattern>
+  </servlet-mapping>
+</web-app>

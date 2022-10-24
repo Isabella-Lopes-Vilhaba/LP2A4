@@ -1,0 +1,51 @@
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>LP2A4</title>
+	</head>
+	<style>
+		#nome{
+			margin-left: 30px;
+		}
+		.submit{
+			background-color: #FFD700;
+			border: none;
+			border-radius: 5px;
+			color: #FFFFFF;
+			cursor: pointer;
+			font-weight: bold;
+			height: 40px;
+			padding-inline: 15px;
+		}
+		
+		.submit:hover{
+			background-color: #DDB522;
+		}
+		
+		input{
+			border: solid 1px black;
+			border-radius: 3px;
+			padding-inline: 5px;
+			height: 25px;
+			margin-block: 7.5px;
+		}
+		
+	</style>
+	<body>
+		<form action="aluno.jsp" method="get">
+			<div>
+				<label>
+					Nome:
+					<input type="text" id="nome" name="nome">
+				</label>
+			</div>
+			<div>
+				<label>
+					Matrícula:
+					<input type="text" id="matricula" name="matricula">
+				</label>
+			</div>
+			<input type="submit" class="submit">
+		</form>
+	</body>
+</html>
