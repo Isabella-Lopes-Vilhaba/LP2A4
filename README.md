@@ -14,4 +14,5 @@ Esse projeto foi desenvolvido com base nessa [Playlist](https://www.youtube.com/
 
 ### Atividades
 - [n+1](https://github.com/Isabella-Lopes-Vilhaba/LP2A4/tree/main/Projeto_n_mais_um) - Essa atividade foi desenvolvido com base no problema apresentado [aqui](https://blog.algaworks.com/o-problema-do-n-mais-um/) e com o conteúdo de apoio fornecido pelo professor nesse [repositório](https://github.com/diegocaldas/lp2a4_crud_properties)
-- [Completar CRUD com Properties](https://github.com/Isabella-Lopes-Vilhaba/LP2A4/tree/main/lp2a4_crud_properties/lp2a4_crud_properties-main) - Essa atividade foi desenvolvido com base no conteúdo de apoio fornecido pelo professor nesse [repositório](https://github.com/diegocaldas/lp2a4_crud_properties)
+- [Completar CRUD com Properties](https://github.com/Isabella-Lopes-Vilhaba/LP2A4/tree/main/lp2a4_crud_properties) - Essa atividade foi desenvolvido com base no conteúdo de apoio fornecido pelo professor nesse [repositório](https://github.com/diegocaldas/lp2a4_crud_properties)
+- [Completar CRUD com JPA](https://github.com/Isabella-Lopes-Vilhaba/LP2A4/tree/main/lp2a4_crud_jpa) - Essa atividade consite no aprimoramento da anterior
